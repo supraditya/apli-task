@@ -1,0 +1,28 @@
+body {
+  background-color: black !important;
+}
+nav {
+  background-color: #8390fa !important;
+  text-align: right;
+}
+#sitetitle {
+  position: relative;
+  color: white;
+  /* float: right; */
+}
+#company_logo {
+  /* float: right; */
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  margin-right: 1%;
+}
+.navcontainer {
+  padding: 0% 2% 0% 2%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  /* border: solid 1px black; */
+}
