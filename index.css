@@ -4,6 +4,9 @@
 body {
   background-color: #1a1a1a !important;
 }
+.text {
+  color: white;
+}
 nav {
   background-color: #48847c !important;
   text-align: right;
@@ -19,6 +22,12 @@ nav {
   height: 60px;
   width: 60px;
   margin-right: 1%;
+}
+#profile_pic {
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  margin-bottom: 8%;
 }
 .navcontainer {
   padding: 0% 2% 0% 2%;
@@ -51,6 +60,7 @@ nav {
   color: white;
 }
 .profile {
+  text-align: center;
   grid-column-start: 1;
   grid-column-end: 6;
   grid-row-start: 1;
@@ -75,8 +85,29 @@ nav {
   grid-row-end: 20;
 }
 .comment {
+  /* text-align: center; */
   grid-row-start: 14;
   grid-row-end: 20;
   grid-column-start: 7;
   grid-column-end: 17;
+}
+.comment-box {
+  background-color: #303030;
+  border: solid 1px #7a7a7a;
+  resize: none;
+  padding: 4px;
+  color: white;
+  width: 90%;
+  height: 55%;
+  border-radius: 6px;
+}
+.savebutton {
+  float: right;
+  margin-right: 10%;
+  margin-top: 2%;
+}
+.resultsbutton {
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 45%;
 }
