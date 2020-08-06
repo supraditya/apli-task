@@ -7,7 +7,7 @@ body {
 .text {
   color: white;
 }
-nav {
+.sitenav {
   background-color: #48847c !important;
   text-align: right;
 }
@@ -67,6 +67,8 @@ nav {
   grid-row-end: 20;
 }
 .question-select {
+  display: inline-flex;
+  align-items: baseline;
   grid-column-start: 7;
   grid-column-end: 20;
   grid-row-start: 1;
@@ -76,17 +78,18 @@ nav {
   grid-column-start: 7;
   grid-column-end: 17;
   grid-row-start: 3;
-  grid-row-end: 14;
+  grid-row-end: 16;
 }
 .overview {
   grid-column-start: 17;
   grid-column-end: 20;
   grid-row-start: 3;
   grid-row-end: 20;
+  text-align: center;
 }
 .comment {
   /* text-align: center; */
-  grid-row-start: 14;
+  grid-row-start: 16;
   grid-row-end: 20;
   grid-column-start: 7;
   grid-column-end: 17;
@@ -107,7 +110,35 @@ nav {
   margin-top: 2%;
 }
 .resultsbutton {
-  margin-left: 30%;
-  margin-right: 30%;
+  margin-left: 25%;
+  margin-right: 25%;
   margin-top: 45%;
+}
+#modaltable {
+  width: 100%;
+  text-align: center;
+  border: solid 1px white;
+}
+tr {
+  border: solid 1px white;
+}
+th {
+  border: solid 1px white;
+}
+td {
+  border: solid 1px white;
+}
+.modaltitle {
+  text-align: center !important;
+}
+.modal-content {
+  background-color: #303030 !important;
+}
+.qselectbutton {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+nav ul li a {
+  background-color: #303030 !important;
+  color: white;
 }

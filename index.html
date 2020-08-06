@@ -18,7 +18,56 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-dark">
+    <div class="modal fade" id="resultsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header modaltitle">
+            <h5 class="modal-title text" id="ModalLongTitle">Results</h5>
+            <button type="button" class="close" style="color: white;" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <table id="modaltable">
+              <tr class="text">
+                <th>QUESTION</th>
+                <th>GRADE</th>
+                <th>COMMENT</th>
+              </tr>
+              <tr class="text">
+                <td>1</td>
+                <td>3/5</td>
+                <td>Good</td>
+              </tr>
+              <tr class="text">
+                <td>2</td>
+                <td>4/5</td>
+                <td>Great</td>
+              </tr>
+              <tr class="text">
+                <td>3</td>
+                <td>1/5</td>
+                <td>Poor</td>
+              </tr>
+              <tr class="text">
+                <td>4</td>
+                <td>0/5</td>
+                <td>Wrong</td>
+              </tr>
+              <tr class="text">
+                <td>5</td>
+                <td>5/5</td>
+                <td>Excellent!</td>
+              </tr>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-dark sitenav">
         <div class="navcontainer">
             <img src="./pic_placeholder.jpg" id="company_logo" alt="Company Logo">
             <h2 id="sitetitle">Company Name</h1>
@@ -30,15 +79,61 @@
             <h3 class="text">Aditya Menon</h3>
             <p class="text" style="margin-top: 60%;">Radar Here</p>
             <br>
-            <button type="button" class="btn btn-outline-info resultsbutton">View Results</button>
+            <button type="button" class="btn btn-outline-info resultsbutton" data-toggle="modal" data-target="#resultsModal">View Results</button>
           </div>
-          <div class="grid-item question-select tab">Q select</div>
-          <div class="grid-item video tab">video</div>
-          <div class="grid-item overview tab">overview</div>
+          <div class="grid-item question-select tab">
+            <h3 class="text" style="width: 40%; width: 50%;">Question: 1</h3>
+            <nav>
+              <ul class="pagination" >
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="grid-item video tab">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/CMyQqQbjknM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="grid-item overview tab">
+            <h2 style="text-align: center;">Grade</h2>
+            <p style="text-align: center;" class="text">(Out of 5)</p>
+            <br>
+            <button type="button" class="btn btn-outline-light">1</button>
+            <br>
+            <br>
+            <button type="button" class="btn btn-outline-light">2</button>
+            <br>
+            <br>
+            <button type="button" class="btn btn-outline-light">3</button>
+            <br>
+            <br>
+            <button type="button" class="btn btn-outline-light">4</button>
+            <br>
+            <br>
+            <button type="button" class="btn btn-outline-light">5</button>
+            <br>
+            <br>
+            <br>
+            <h3 style="text-align: center;" class="text">Score: 3/5</h3>
+          </div>
           <div class="grid-item comment tab">
             <textarea name="" id="" cols="25" rows="1" class="comment-box" placeholder="Comment..."></textarea>
             <br>
-            <button type="button" class="btn btn-outline-success savebutton">Save Comment</button>
+            <button type="button" class="btn btn-outline-success savebutton">Save Grading and Comment</button>
           </div>
     </div>
   </body>
