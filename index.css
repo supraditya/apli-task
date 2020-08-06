@@ -31,8 +31,7 @@ nav {
 }
 .grid-container {
   display: grid;
-  border: solid 1px #7a7a7a;
-  background-color: #202020;
+  border: none;
   grid-template-columns: 5% 5% 5%;
   grid-template-rows: 5% 5% 5%;
   grid-gap: 5px;
@@ -40,10 +39,15 @@ nav {
   margin: auto;
   width: 95vw !important;
   height: 85vh;
+}
+.tab {
+  border: solid 1px #7a7a7a;
+  background-color: #202020;
   border-radius: 6px;
+  padding: 10px;
 }
 .grid-item {
-  border: solid 1px red;
+  /* border: solid 1px red; */
   color: white;
 }
 .profile {
@@ -62,7 +66,7 @@ nav {
   grid-column-start: 7;
   grid-column-end: 17;
   grid-row-start: 3;
-  grid-row-end: 12;
+  grid-row-end: 14;
 }
 .overview {
   grid-column-start: 17;
@@ -71,7 +75,7 @@ nav {
   grid-row-end: 20;
 }
 .comment {
-  grid-row-start: 12;
+  grid-row-start: 14;
   grid-row-end: 20;
   grid-column-start: 7;
   grid-column-end: 17;
