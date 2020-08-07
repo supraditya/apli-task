@@ -70,6 +70,10 @@ $(document).ready(function () {
   $("#one").click(function () {
     qnumber = 0;
     $("#videobox1").css("display", "grid");
+    $("#videobox2").css("display", "none");
+    $("#videobox3").css("display", "none");
+    $("#videobox4").css("display", "none");
+    $("#videobox5").css("display", "none");
     $("#qno").text(objectArray[0].number);
     $("#comm").val(objectArray[0].comment);
     $("#score").text(objectArray[0].grade);
@@ -78,7 +82,11 @@ $(document).ready(function () {
   $("#two").click(function () {
     loadIframe(objectArray[1].link);
     qnumber = 1;
-
+    $("#videobox1").css("display", "none");
+    $("#videobox2").css("display", "grid");
+    $("#videobox3").css("display", "none");
+    $("#videobox4").css("display", "none");
+    $("#videobox5").css("display", "none");
     $("#qno").text(objectArray[1].number);
     $("#comm").val(objectArray[1].comment);
     $("#score").text(objectArray[1].grade);
@@ -87,7 +95,11 @@ $(document).ready(function () {
   $("#three").click(function () {
     loadIframe(objectArray[2].link);
     qnumber = 2;
-
+    $("#videobox1").css("display", "none");
+    $("#videobox2").css("display", "none");
+    $("#videobox3").css("display", "grid");
+    $("#videobox4").css("display", "none");
+    $("#videobox5").css("display", "none");
     $("#qno").text(objectArray[2].number);
     $("#comm").val(objectArray[2].comment);
     $("#score").text(objectArray[2].grade);
@@ -96,6 +108,11 @@ $(document).ready(function () {
   $("#four").click(function () {
     loadIframe(objectArray[3].link);
     qnumber = 3;
+    $("#videobox1").css("display", "none");
+    $("#videobox2").css("display", "none");
+    $("#videobox3").css("display", "none");
+    $("#videobox4").css("display", "grid");
+    $("#videobox5").css("display", "none");
     $("#qno").text(objectArray[3].number);
     $("#comm").val(objectArray[3].comment);
     $("#score").text(objectArray[3].grade);
@@ -103,6 +120,11 @@ $(document).ready(function () {
   // Question 5
   $("#five").click(function () {
     qnumber = 4;
+    $("#videobox1").css("display", "none");
+    $("#videobox2").css("display", "none");
+    $("#videobox3").css("display", "none");
+    $("#videobox4").css("display", "none");
+    $("#videobox5").css("display", "grid");
     loadIframe(objectArray[4].link);
     $("#qno").text(objectArray[4].number);
     $("#comm").val(objectArray[4].comment);
