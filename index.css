@@ -77,13 +77,13 @@ body {
 .video {
   grid-column-start: 7;
   grid-column-end: 17;
-  grid-row-start: 3;
+  grid-row-start: 4;
   grid-row-end: 16;
 }
 .overview {
   grid-column-start: 17;
   grid-column-end: 20;
-  grid-row-start: 3;
+  grid-row-start: 4;
   grid-row-end: 20;
   text-align: center;
 }
@@ -112,7 +112,7 @@ body {
 .resultsbutton {
   margin-left: 25%;
   margin-right: 25%;
-  margin-top: 45%;
+  /* margin-top: 45%; */
 }
 #modaltable {
   width: 100%;
@@ -142,4 +142,14 @@ nav ul li a {
   display: table-cell;
   text-align: right;
   width: 20%;
+}
+#myChart {
+  /* border: solid 1px red; */
+  background-color: white;
+  margin-top: 20%;
+  margin-bottom: 25%;
+  height: 250px !important;
+  width: 250px !important;
+  margin-left: auto;
+  margin-right: auto;
 }

@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/supraditya/apli-task/issues"
   },
-  "homepage": "https://github.com/supraditya/apli-task#readme"
+  "homepage": "https://github.com/supraditya/apli-task#readme",
+  "dependencies": {
+    "chart.js": "^2.9.3"
+  }
 }

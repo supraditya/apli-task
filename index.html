@@ -15,6 +15,7 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     />
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
   </head>
 
   <body>
@@ -77,12 +78,35 @@
           <div class="grid-item profile tab">
             <img src="./pic_placeholder.jpg"  id="profile_pic" alt="Profile picture">
             <h3 class="text">Aditya Menon</h3>
-            <p class="text" style="margin-top: 60%;">Radar Here</p>
+            <!-- <p class="text" style="margin-top: 60%;">Radar Here</p> -->
+            <canvas id="myChart" width="200" height="200"></canvas>
+            <script>
+              var ctx = document.getElementById('myChart').getContext('2d');
+              var chart = new Chart(ctx, {
+                  // The type of chart we want to create
+                  type: 'radar',
+
+                  // The data for our dataset
+                  data: {
+                      labels: ['O', 'C', 'E', 'A', 'N'],
+                      datasets: [{
+                          label: 'Scores',
+                          backgroundColor: '#46A2D8',
+                          borderColor: '#221D23',
+                          data: [1, 2, 3, 4, 5],
+                          
+                      }]
+                  },
+
+                  // Configuration options go here
+                  options: {}
+              });
+              </script>
             <br>
             <button type="button" class="btn btn-outline-info resultsbutton" data-toggle="modal" data-target="#resultsModal">View Results</button>
           </div>
           <div class="grid-item question-select tab">
-            <h3 class="text" style="width: 59%; height: 100%;">Question: 1</h3>
+            <h3 class="text" style="width: 55%; height: 100%;">Question 1</h3>
             <nav class="page-nav">
               <ul class="pagination" >
                 <li class="page-item">
