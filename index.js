@@ -48,6 +48,10 @@ function gradeClick(num, qnumber) {
   document.getElementById("score").innerText = num;
   objectArray[this.qnumber].grade = num;
 }
+function commentSave() {
+  var comment = document.getElementById("comm").value;
+  objectArray[this.qnumber].comment = comment;
+}
 $(document).ready(function () {
   $("#one").click(function () {
     qnumber = 0;
