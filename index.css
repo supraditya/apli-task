@@ -81,7 +81,7 @@ body {
   grid-row-start: 4;
   grid-row-end: 16;
 }
-#videobox1 {
+/* #videobox1 {
   display: none;
 }
 #videobox2 {
@@ -95,7 +95,7 @@ body {
 }
 #videobox5 {
   display: none;
-}
+} */
 .overview {
   grid-column-start: 17;
   grid-column-end: 20;
