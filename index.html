@@ -91,16 +91,34 @@
                       labels: ['O', 'C', 'E', 'A', 'N'],
                       datasets: [{
                           label: 'Scores',
-                          backgroundColor: '#46A2D8',
-                          borderColor: '#221D23',
+                          backgroundColor: 'rgba(0,0,255,0.2)',
+                          borderColor: '#ffffff',
                           data: [1, 2, 3, 4, 5],
                           
                       }]
                   },
 
                   // Configuration options go here
-                  options: {}
-              });
+                  options: {
+                    scale: {
+                      ticks: {
+                        beginAtZero: true,
+                        min: 0,
+                        max: 5,
+                        stepSize: 1
+                      },
+                      gridLines:{
+                        color:'white'
+                      }
+                    },
+                    legend:{
+                      position: 'bottom',
+                    },
+                    labels:{
+                      color: '#fff'
+                    }
+                  }
+                });
               </script>
             <br>
             <button type="button" class="btn btn-outline-info resultsbutton" data-toggle="modal" data-target="#resultsModal">View Results</button>
