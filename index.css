@@ -67,7 +67,7 @@ body {
   grid-row-end: 20;
 }
 .question-select {
-  display: inline-flex;
+  display: table;
   align-items: baseline;
   grid-column-start: 7;
   grid-column-end: 20;
@@ -134,11 +134,12 @@ td {
 .modal-content {
   background-color: #303030 !important;
 }
-.qselectbutton {
-  margin-left: 2%;
-  margin-right: 2%;
-}
 nav ul li a {
   background-color: #303030 !important;
   color: white;
+}
+.page-nav {
+  display: table-cell;
+  text-align: right;
+  width: 20%;
 }
