@@ -27,7 +27,8 @@ body {
   border-radius: 50%;
   height: 80px;
   width: 80px;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
+  margin-top: 4%;
 }
 .navcontainer {
   padding: 0% 2% 0% 2%;
@@ -79,6 +80,21 @@ body {
   grid-column-end: 17;
   grid-row-start: 4;
   grid-row-end: 16;
+}
+#videobox1 {
+  display: none;
+}
+#videobox2 {
+  display: none;
+}
+#videobox3 {
+  display: none;
+}
+#videobox4 {
+  display: none;
+}
+#videobox5 {
+  display: none;
 }
 .overview {
   grid-column-start: 17;
@@ -146,7 +162,7 @@ nav ul li a {
 #myChart {
   /* border: solid 1px red; */
   background-color: #202020 !important;
-  margin-top: 20%;
+  margin-top: 15%;
   margin-bottom: 15%;
   height: 270px !important;
   width: 270px !important;
