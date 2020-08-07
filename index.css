@@ -136,7 +136,7 @@ td {
 }
 nav ul li a {
   background-color: #303030 !important;
-  color: white;
+  color: white !important;
 }
 .page-nav {
   display: table-cell;
